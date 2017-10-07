@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+<com.aoyi.aoyiyun.Base.MyViewPager
+    android:id="@+id/viewpager"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="6"></com.aoyi.aoyiyun.Base.MyViewPager>
+    <RadioGroup
+        android:id="@+id/radiogroup"
+         android:background="#1e4264"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingTop="3dp"
+        >
+        <RadioButton
+            android:textColor="#626d7d"
+            android:background="@drawable/home_btn"
+            android:paddingTop="5dip"
+            android:gravity="center"
+            android:button="@null"
+            android:id="@+id/rb_jiankong"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/e"
+            android:text="实时监控" />
+
+        <RadioButton
+            android:textColor="#626d7d"
+            android:background="@drawable/home_btn"
+            android:paddingTop="5dip"
+            android:gravity="center"
+            android:button="@null"
+            android:id="@+id/rb_gaojing"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/b"
+            android:text="告警信息" />
+
+        <RadioButton
+            android:textColor="#626d7d"
+            android:background="@drawable/home_btn"
+            android:paddingTop="5dip"
+            android:button="@null"
+            android:ellipsize="marquee"
+            android:id="@+id/rb_jidian"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/c"
+            android:text="集电线路" />
+
+        <RadioButton
+            android:textColor="#626d7d"
+            android:background="@drawable/home_btn"
+            android:paddingTop="5dip"
+            android:gravity="center"
+            android:button="@null"
+            android:id="@+id/rb_shuju"
+          android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/d"
+            android:text="数据统计" />
+    </RadioGroup>
+</LinearLayout>
